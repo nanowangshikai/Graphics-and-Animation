@@ -1,0 +1,31 @@
+Operating system used : Linxu 
+Computer original OS: Mac OS
+
+The reason why I installed Linux operating system is because I have got segmentation fault after 
+executing “make” in Graphics project.
+
+Here is the following step to setup the OpenGL environment:
+    1.I have downloaded VirtualBox and ubuntu disk image in ubuntu.com
+    2.Installed Virtual studio Code editor in my virtual Linux
+    3.Installed the necessary library files and dependency of OpenGL. 
+        sudo apt-get update
+        sudo apt-get install g++
+        sudo apt-get install freeglut3
+        sudo apt-get install freeglut3-dev
+        sudo apt-get install binutils-gold
+        sudo apt-get install g++ cmake
+        sudo apt-get install libglew-dev
+        sudo apt-get install mesa-common-dev
+        sudo apt-get install build-essential
+        sudo apt-get install libglew1.5-dev libglm-dev
+        sudo apt-get install libxml-dev lib-dev
+
+	Here is the link: https://www.google.com/amp/s/www.wikihow.com/Install-Mesa-(OpenGL)-on-	Linux-Mint%3famp=1
+
+
+
+    4.There were some spelling mistakes in include/GL/glew.h
+	  Line 1155 and Line 1157. It should be <OpenGL/glut.h> instead of <OpenGL/glu.h>
+
+
+After following the instruction and make file works. 
